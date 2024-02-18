@@ -1,0 +1,640 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+/* html,body{
+    width:100%;
+    height:100%;
+} */
+
+
+.main{
+    width:100vw;
+    height:100vh;
+    background-color: #dadada;
+    /* overflow: auto; */
+    /* overflow-x: hidden; */
+}
+
+
+#page1{
+    width:100%;
+    height:100vh;
+    /* background-color: #dadada; */
+    background-image: url("background2.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+#center{
+    position:absolute;
+    width:50%;
+    height:80%;
+    left:25%;
+    top:50%;
+    transform: translate(0%,-50%);
+    /* background-color: red; */
+}
+
+/* If you set only the height of an image to 100% without explicitly defining the width, the width of the image
+ will be automatically adjusted by the browser to maintain the image's aspect ratio. This is because, by 
+ default, images in HTML maintain their aspect ratio unless specified otherwise. 
+ 
+ 
+ For position: absolute;, if you don't specify any of top, bottom, left, or right, the element will be positioned
+  at the top-left corner of its containing block, which is the nearest ancestor that has a position value other 
+  than static (the default positioning).
+ */
+.image{
+    overflow: hidden;
+    position:absolute;
+    width:0%;
+    height:100%;
+     /* background-color: yellow;  */
+}
+img{
+     /* width:100%;  */
+    height:100%;
+     /* object-fit: cover;   */
+}
+/* #one{
+    width:80%;
+}
+#two{
+    width:50%;
+}
+#three{
+    width:20%;
+} */
+.nav{
+    width:100%;
+    height:60px;
+    /* background-color: red; */
+    display:flex;
+    position:fixed;
+    z-index: 999;
+}
+#part2{
+    width:40%;
+    height:60px;
+    /* background-color: green; */
+    display:flex;
+    justify-content: flex-end;
+
+}
+#part1{
+    width:60%;
+    height:60px;
+    /* background-color: yellow; */
+}
+.nav #part2 a {
+     font-size: 20px;
+     text-decoration: none;
+     margin:10px;
+     color:black;
+     z-index: 999;
+} 
+.nav #part1 h2 {
+    margin:10px;
+    margin-top: 5px;
+    font-size: 30px;
+    font-weight: bold;
+    color:transparent;
+    -webkit-text-stroke: 1.5px;
+    -webkit-text-stroke-color: black;
+    word-spacing: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    z-index: 999;
+
+} 
+.nav #part2 a:nth-last-child(1) {
+   position:relative;
+   text-align: center;
+   border:2px solid black;
+   border-radius: 50px;
+   overflow: hidden;
+   margin-top: 5px;
+   margin-bottom:15px;
+   padding:5px;
+} 
+
+#ani{
+    position:absolute;
+    top:0px;
+    left:-100%;
+    width:100%;
+    height:100%;
+    background-color: green;
+    z-index: -1;
+    transition: left 0.5s linear;
+}
+#l4:hover #ani{ 
+    left:0%;
+}
+#text{
+    position:absolute;
+    top:20%;
+    left:1%;
+    height:50px;
+    /* width:200px; */
+    /* background-color: red; */
+}
+#text h1{
+    font-weight: bold;
+    /* word-spacing: 8px; */
+    letter-spacing: 3px;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+    /* color:rgb(222, 35, 232); */
+    color:coral;
+}
+#img1{
+    position:absolute;
+    top:30%;
+    left:5%;
+    height:300px;
+    width:200px;
+    /* background-color: green; */
+    background-image: url("model3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+#img2{
+    position:absolute;
+    top:20%;
+    right:2%;
+    height:220px;
+    width:250px;
+    /* background-color: rgb(169, 179, 36); */
+    background-image: url("model1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+#img3{
+    position:absolute;
+    top:60%;
+    right:2%;
+    height:220px;
+    width:250px;
+    /* background-color: rgb(83, 16, 198); */
+    background-image: url("model2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+#page2{
+    height:60vh;
+    width:100%;
+    background-color: black;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+#t2,#t1{
+    color:white;
+    margin-top:60px;
+    margin-left:20px;
+    width:60%;
+    text-align: center;
+}
+
+.both{
+    width:200px;
+    height:60px;
+    display:flex;
+}
+#about{
+    /* background-color: green; */
+    width:60%;
+    height:100%;
+    padding-top: 10px;
+}
+#arrow{
+    /* background-color: red; */
+    width:40%;
+    height:80%;
+    margin-top:20px;
+    border:2px solid white;
+    border-radius:50px;
+}
+#arrow a{
+    color:white;
+    text-decoration: none;
+    font-size: 30px;
+    text-align: center;
+    margin:15px;
+    margin-left: 20px;
+    padding-top:5px;
+    margin-top:30px;
+    font-weight: bolder;
+}
+#page3{
+    width:100%;
+    height:150vh;
+    /* background-color: #c4bcb3; */
+    background-image: url("background1.jpg");
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+#p3_box1{
+    width:100%;
+    height:50%;
+    /* background-color: red; */
+    display:flex;
+}
+#p3box1{
+    margin-top:40px;
+    margin-left:10px;
+    height:100%;
+    width:35%;
+    /* background-color: green; */
+}
+#p3box2{
+    height:100%;
+    width:30%;
+    /* background-color: rgb(60, 8, 164); */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+#p3box2 h1,#p3box2 h4{
+    color:black;
+    margin:10px;
+}
+#p3box2 h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+#p3box2 h2{
+    font-size:40px;
+    /* margin-bottom:20px; */
+}
+#p3box3{
+    margin-top:40px;
+    margin-right:10px;
+    height:100%;
+    width:35%;
+    /* background-color: rgb(171, 192, 16); */
+}
+#p3_box2{
+    width:100%;
+    height:50%;
+    /* background-color: rgb(135, 25, 93); */
+}
+#p3img1{
+    width:100%;
+    height:50%;
+    /* background-color: black; */
+    background-image: url("window.jpg");
+    background-position: contain;
+    background-position: center;
+    text-align: center;
+    transition: height 1.5s;
+}
+#p3img2{
+    width:100%;
+    height:50%;
+    /* background-color: black; */
+    background-image: url("shoes.jpg");
+    background-position: contain;
+    background-position: center;
+    transition: height 1.5s;
+}
+/* #p3img2:hover{
+    height:70%;
+}
+#p3img1:hover{
+    height:70%;
+} */
+#p3img1 h1,#p3img1 h2{
+    color:black;
+    
+}
+#p3img3 h1,#p3img3 h2{
+    color:black;
+    
+}
+#p3_box2{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+#p3_box2 h1{
+   color:black;
+   font-size: 250px;
+   font-weight: bolder;
+   -webkit-text-stroke:2px;
+   -webkit-text-stroke-color:white;
+}
+#page4{
+    width:100%;
+    height:100vh;
+    /* background-color: coral; */
+    background-image: url("background5.jpg");
+    background-size: cover;
+    background-position: center;
+    position:relative;
+    overflow: hidden;
+}
+#p4img{
+    height:200px;
+    width:600px;
+    /* background-color: red; */
+    background-image: url("background4.jpg");
+    background-repeat: no-repeat;
+    position:absolute;
+    right:10px;
+    bottom:10px;
+    /* filter:blur(1px); */
+    
+}
+#page5{
+    width:100%;
+    height:100vh;
+    background-color: black;
+    overflow: hidden;
+}
+#p5box1{
+    height:10%;
+    width:100%;
+    /* background-color:blue; */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#p5box1 h1{
+    font-size: 50px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+#p5box2{
+    height:60%;
+    width:100%;
+    /* background-color:rgb(12, 231, 30); */
+    display:flex;
+}
+#p5box3{
+    height:10%;
+    width:100%;
+    /* background-color:rgb(168, 27, 116); */
+    display:flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+#p5box4{
+    height:20%;
+    width:100%;
+    /* background-color:rgb(166, 190, 15); */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#p5box3 h2{
+    padding-left:100px;
+
+}
+#p5box4 h2{
+    font-size:25px;
+    color:white;
+}
+#p5box4 h3{
+    color:white;
+}
+#p5box3 i{
+    font-size: 30px;
+    color:white;
+    gap:10px;
+    /* padding-left:20px; */
+}
+#p5box3 i:nth-child(2){
+    padding-left:30px;
+}
+#side1{
+    height:100%;
+    width:50%;
+    /* background-color: bisque; */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items:stretch; */
+    /* margin-left:370px; */
+    padding-left:20%;
+    
+    
+
+}
+#side2{
+    height:100%;
+    width:50%;
+    /* background-color: rgb(161, 93, 10); */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items:stretch; */
+    padding-left:10%;
+}
+.w,.w1{
+    font-size: 20px;
+    margin:12px;
+    color:white;
+}
+
+
+@media screen and (max-width: 600px) {
+    /* Adjust font size for smaller screens */
+    .w, .w1 {
+        font-size: 10px;
+        /* margin:px; */
+    }
+    #p5box1 h1{
+        font-size: 11px;
+    }
+    #p5box3 h2{
+        font-size: 11px;
+    }
+    #p5box3 i:nth-child(2){
+        padding-left:10px;
+    }
+    #p5box3 h2{
+        padding-left:30px;}
+        #p5box4 h2{
+            font-size:10px;
+            color:white;
+        }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Adjust font size for medium-sized screens */
+    .w, .w1 {
+        font-size: 8px;
+    }
+}
+
+
+
+
+
+.cont{
+    overflow: hidden;
+    position:relative;
+    width:100%;
+    height:130vh;
+    /* background-color: black; */
+    background-image: url("background3.jpg");
+    background-position: center;
+    
+}
+#box1{
+    position:absolute;
+    left:50%;
+    top:35%;
+    height:200px;
+    /* background-color: red; */
+    color:transparent;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: rgb(96, 28, 231);
+    transform:rotate(90deg);
+    /* object-fit: cover; */
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: 100px;
+    /* white-space: nowrap; */
+    z-index: 99;
+    
+}
+#box2{
+    position:absolute;
+    /* background-color: red; */
+    background-image: url("model3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+    /* object-fit: cover; */
+    /* background-position: center; */
+    height:500px;
+    width:1000px;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    animation-name: move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out; 
+    animation-fill-mode: forwards;
+    
+}
+@keyframes move{
+    50%{
+        background-position: center;
+    }
+}
+#box3{
+    position:absolute;
+    background-color: rgba(41, 35, 35, 0.4);
+    height:500px;
+    width:1000px;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    /* z-index: -3;     */
+}
+#move{
+    position:absolute;
+    height:50px;
+    aspect-ratio: 1;
+    background-color: white;
+    /* top:50%; */
+    top:0px;
+    left:0px;
+    /* transform:translate(-50%,-50%); */
+    animation: ani 5s 1s infinite;
+    z-index: 999;
+}
+@keyframes ani{
+    33%{
+        aspect-ratio: 0.4;
+    }
+    66%{
+        aspect-ratio: 6;
+    }
+}
+#movep{
+    position:absolute;
+    height:50px;
+    aspect-ratio: 1;
+    opacity: 1;
+    /* background-color: red; */
+    top:50%;
+    left:20%;
+    transform:translate(-50%,-50%);
+    /* z-index: -1; */
+}
+#potrait{
+    position:absolute;
+    height:400px;
+    width:200px;
+    top:50%;
+    right:15%;
+    transform: translate(-50%,-50%);
+    /* background-color: red; */
+    background-image: url("model1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+#lin1{
+    position:absolute;
+    height:100px;
+    white-space: nowrap;
+    /* background-color: red; */
+    top:23%;
+    left:10%;
+    transform:translate(-50%,-50%);
+    color:white;
+    font-size: 50px;
+    font-weight:bolder;
+    animation-name: line;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    /* animation-fill-mode: forwards; */
+    z-index: 1000;
+    
+
+}
+@keyframes  line {
+    0%{
+        left:32%;
+        
+    }
+  
+   
+    20%{
+        left:67%;
+        top:23%;
+    }
+    40%{
+        top:83%;
+        left:67%;
+    }
+    60%{
+        top:83%;
+        left:32%;
+    }
+    100%{
+        top:23%;
+        left:32%;
+    }
+}
